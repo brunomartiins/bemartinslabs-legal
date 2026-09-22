@@ -36,12 +36,12 @@
         <a href="support.html">Support</a>
       </nav>
       <h1>Privacy Policy</h1>
-      <p class="updated">Last updated: September 18, 2026</p>
+      <p class="updated">Last updated: September 22, 2026</p>
 
-      <p>Meant is an affirmations app for iPhone. This policy explains what information is handled when you use Meant, where it stays, and who else processes it. In short: your answers, name and saved affirmations stay on your iPhone. Apple and RevenueCat process subscription information.</p>
+      <p>Meant is an affirmations app for iPhone. This policy explains what information is handled when you use Meant, where it stays, and who else processes it. Your name, typed text and saved affirmation text stay on your iPhone. Apple and RevenueCat process subscriptions. PostHog processes usage, selected preferences and diagnostic information as described below.</p>
 
       <h2>No account</h2>
-      <p>Meant has no sign-up, login or account system, and we do not run our own servers for the app.</p>
+      <p>You do not need to create an account to use Meant. We use hosted providers for subscriptions and analytics. These providers can retain information even though Meant does not operate its own app server.</p>
 
       <h2>Information stored on your device</h2>
       <p>Meant stores the following locally on your iPhone:</p>
@@ -50,7 +50,7 @@
         <li>Your onboarding choices, such as the desires, identity and feelings you select, and your content preferences.</li>
         <li>Saved affirmations, your streak, reading position, reminder settings and appearance choice.</li>
       </ul>
-      <p>This information is not sent to us, to RevenueCat or to any AI service. Meant matches affirmations to your choices on the device, without runtime AI. Deleting the app normally deletes this information, unless your device or iCloud backup keeps a copy. Meant does not provide its own cloud sync.</p>
+      <p>Your name, typed text, private reflections and saved affirmation text are not sent to PostHog or RevenueCat. Codes representing your predefined choices and the content you interact with are sent to PostHog for analytics. Meant matches affirmations to your choices on the device, without runtime AI; your answers are not sent to an AI service. Deleting the app normally deletes this information, unless your device or iCloud backup keeps a copy. Meant does not provide its own cloud sync.</p>
 
       <h2>Reminders</h2>
       <p>If you turn on reminders, Meant asks iOS for notification permission and schedules them locally on your iPhone. No remote notification service is used. Reminder text is a public affirmation and does not include your name or private answers. You can change or turn off reminders in Meant or in iOS Settings.</p>
@@ -65,40 +65,53 @@
       <p>Meant offers an optional Premium subscription. Payments are processed by Apple; we never receive your payment-card details. We use RevenueCat, Inc. to validate purchases, restore access, manage Premium access, prevent fraud and understand aggregate purchase performance.</p>
       <p>RevenueCat may process:</p>
       <ul>
-        <li>An automatically generated anonymous app user ID.</li>
+        <li>An automatically generated app user ID and the PostHog analytics identifier used to associate subscription events with usage of Meant.</li>
         <li>Purchase and subscription information, including Apple transaction data.</li>
         <li>Technical information such as device model, operating system, app version, country/storefront and last-seen time.</li>
       </ul>
-      <p>We do not send your name, onboarding answers, saved affirmations or any other content from the app to RevenueCat. RevenueCat handles information under its own <a href="https://www.revenuecat.com/privacy/">Privacy Policy</a>.</p>
+      <p>Your name, onboarding answer values and saved affirmation text are not sent as RevenueCat customer attributes. The PostHog identifier is supplied to RevenueCat so subscription events can be associated with the same analytics profile through its PostHog integration. RevenueCat handles information under its own <a href="https://www.revenuecat.com/privacy/">Privacy Policy</a>.</p>
 
-      <h2>Analytics, advertising and tracking</h2>
-      <p>Meant contains no advertising, no third-party analytics SDK and no tracking across apps or websites. We do not access your contacts, calendar, location or advertising identifier. Apple may provide us with aggregated App Store and crash statistics if you have chosen to share them with developers in iOS Settings.</p>
+      <h2>Analytics and diagnostics — PostHog</h2>
+      <p>We use PostHog to understand how you use Meant, improve its features and investigate errors. Usage and diagnostic information may include:</p>
+      <ul>
+        <li>App opens, screens, time spent on screens, taps, reading progress, card and Moment identifiers, save/share actions and activation steps.</li>
+        <li>Codes for the predefined areas, desires, Moments, blockers, qualities and help preferences you choose; whether you entered a name, but not the name itself.</li>
+        <li>Reminder counts and hours, notification permission status, installed-widget counts, streak counts and subscription/trial status.</li>
+        <li>App version, operating system and device information, installation age, session and generated user/device identifiers, feature-flag information and crash/error reports.</li>
+      </ul>
+      <p>These events are associated with a persistent analytics profile. We do not send your name, email address, payment-card details, typed text, private reflections or affirmation text in analytics events. However, predefined choice and content codes describe your preferences and activity. These records are pseudonymous, not completely anonymous, and can be associated with subscription information through the RevenueCat integration.</p>
+      <p>Network requests expose an IP address to the receiving service. Depending on the PostHog project's IP and geolocation settings, it may retain that address and derive approximate location, such as city, region or country. Meant does not request GPS or precise-location access.</p>
+      <p>The app does not enable session replay or send screen recordings to PostHog. PostHog processes information under its <a href="https://posthog.com/privacy">Privacy Policy</a> and the data-processing terms applicable to our use of its service.</p>
+
+      <h2>Advertising and tracking</h2>
+      <p>Meant contains no advertising. We do not use this information to target or measure advertisements across other companies' apps or websites, and we do not sell it to data brokers. We do not access your contacts, calendar or advertising identifier. Apple may separately provide aggregated App Store and crash statistics according to your Apple privacy settings.</p>
 
       <h2>How information is used</h2>
       <ul>
         <li>To show affirmations, Topics, Moments, reminders and widgets that match your choices, on your device.</li>
         <li>To process, validate and restore Premium purchases and decide whether Premium is available.</li>
         <li>To prevent purchase fraud and troubleshoot purchase problems.</li>
+        <li>To understand feature usage, onboarding and subscription conversion, improve Meant and investigate crashes.</li>
         <li>To answer you when you contact support.</li>
       </ul>
 
       <h2>Sharing</h2>
-      <p>We do not sell or rent your personal information and do not use it for advertising. Purchase and technical information is shared with Apple and RevenueCat only as needed to operate subscriptions, or when required by law.</p>
+      <p>We do not sell or rent your personal information and do not use it for advertising. Information is processed by Apple for purchases, RevenueCat for subscriptions and PostHog for analytics and diagnostics, as described above. Service providers are required to protect information under the applicable agreements and privacy obligations. We may also disclose information when required by law.</p>
 
       <h2>Support email</h2>
-      <p>If you email us, we receive your email address and whatever you choose to include. We use it only to reply and keep it only as long as needed to help you. The app never sends anything to us automatically.</p>
+      <p>If you email us, we receive your email address and whatever you choose to include. We use it only to reply and keep it only as long as needed to help you. Meant does not automatically send support emails or attach your private choices. This is separate from the analytics events described above.</p>
 
       <h2>Retention and deletion</h2>
-      <p>Information on your device stays there until you delete it or delete the app. Apple and RevenueCat may retain purchase records to validate purchases, prevent fraud, comply with law and meet their own obligations. You can contact us about a privacy or deletion request at the address below; some transaction records cannot be deleted where retention is legally required.</p>
+      <p>Information on your device stays there until you delete it or delete the app, subject to device backups. Deleting Meant does not automatically erase records already held by PostHog, RevenueCat or Apple. Analytics events and profiles are retained according to the retention settings and service terms applicable to our PostHog project, for the purposes described here. Purchase records may be retained to validate subscriptions, prevent fraud and meet legal obligations. We do not claim that these services immediately discard your information. Contact us to request access or deletion; we may need information that lets us locate your pseudonymous records. We will not ask you to send payment-card details. Some transaction records must be retained where required by law.</p>
 
       <h2>Children</h2>
       <p>Meant is not directed to children under 13, and we do not knowingly collect personal information from children under 13. If you believe a child has provided personal information, contact us so we can address it.</p>
 
       <h2>Your rights</h2>
-      <p>Depending on where you live, including the EU, UK, Brazil (LGPD) and California, you may have rights to access, correct, delete, restrict or object to processing of personal information about you. Because most Meant data never leaves your device, you control it there directly. For anything processed by RevenueCat, contact us and we will help. You can manage or cancel your subscription in your Apple Account subscription settings and restore purchases from within Meant.</p>
+      <p>Depending on where you live, including the EU, UK, Brazil (LGPD) and California, you may have rights to access, correct, delete, restrict or object to processing of personal information about you. You control locally stored information on your device. For access, correction, deletion or an objection concerning information processed by PostHog or RevenueCat, contact us and we will help identify the relevant records and handle your request. If processing relies on consent, you can withdraw it; this does not affect processing that occurred before withdrawal. You may also complain to your local data protection authority. You can manage or cancel your subscription in your Apple Account subscription settings and restore purchases from within Meant.</p>
 
       <h2>International processing</h2>
-      <p>Apple and RevenueCat may process information in countries other than the one where you live, under their policies and applicable safeguards.</p>
+      <p>Apple, RevenueCat and PostHog may process information outside the country where you live. Hosting region depends on the service and project configuration. Applicable contractual and legal safeguards govern international transfers; contact us for information about the arrangements relevant to your request.</p>
 
       <h2>Changes</h2>
       <p>We may update this policy when Meant changes or when the law requires. The date at the top shows the latest version.</p>
